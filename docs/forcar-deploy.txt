@@ -1,1 +1,1 @@
-deploy
+<!-- Arquivo obsoleto, usar index.html -->
