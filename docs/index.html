@@ -1,87 +1,105 @@
-html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MUNDO OMAX</title>
-  <meta name="description" content="Tecnologia com atitude: Omax Akchei apresenta curadoria elegante, loja e conteúdos selecionados.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MUNDO OMAX — presença, precisão e estilo</title>
+  <meta name="description" content="Curadoria de tecnologia com presença. Análises técnicas avançadas, recomendações e atitude.">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
+
   <header class="topbar">
     <div class="container">
-      <a class="brand" href="#inicio">
-        <img src="logo-omax.png" alt="OMAX" class="logo">
+      <a class="brand" href="#">
+        <img src="logo-omax.png" alt="Logo OMAX" class="logo">
         <span class="brand-name">MUNDO OMAX</span>
       </a>
       <nav class="nav">
         <a href="#inicio">Início</a>
         <a href="#canal">Canal</a>
         <a href="#loja">Loja</a>
+        <a href="#analises">Análises</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>
   </header>
 
-  <main id="inicio" class="hero">
+  <section id="inicio" class="section">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <h1>Bem-vindo ao MUNDO OMAX</h1>
-        <p>Curadoria de tecnologia com presença: estilo, performance e precisão. Sem barulho — só o essencial.</p>
+        <h1>MUNDO OMAX — presença, precisão e estilo</h1>
+        <p>Curadoria de tecnologia com atitude. Análises técnicas avançadas e recomendações que você pode confiar.</p>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://www.youtube.com/@SeuCanal" target="_blank" rel="noopener">Inscreva-se no canal</a>
-          <a class="btn btn-outline" href="https://wa.me/55DDDNÚMERO?text=Quero%20falar%20com%20o%20MUNDO%20OMAX" target="_blank" rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-primary" href="https://wa.me/5521987610546" target="_blank">Falar no WhatsApp</a>
+          <a class="btn btn-outline" href="https://instagram.com/ostra43" target="_blank">@ostra43</a>
         </div>
       </div>
       <div class="hero-art">
-        <img src="logo-omax.png" alt="Logo OMAX grande">
+        <div class="embed-box">
+          <!-- Banner do Canva -->
+          <!-- <iframe src="LINK_DO_CANVA" allowfullscreen loading="lazy"></iframe> -->
+        </div>
       </div>
     </div>
-  </main>
-  <section id="canal" class="section">
+  </section>
+
+  <section id="recomendacoes" class="section">
     <div class="container">
-      <h2>Omax TechView</h2>
-      <p>O melhor do momento em tecnologia, com narração e edição de alto nível. Sem “Top 5” — curadoria com personalidade.</p>
-      <a class="link" href="https://www.youtube.com/@SeuCanal" target="_blank" rel="noopener">Ir para o canal →</a>
+      <button class="toggle-recomendacoes" onclick="document.getElementById('lista-reco').classList.toggle('show')">
+        Omax recomenda:
+      </button>
+      <div id="lista-reco" class="recomendacoes-lista">
+        <ul>
+          <li><strong>☕ CoffeeTown Leblon:</strong> Os mais refinados cafés e iguarias desse Bistrô Café — <a href="https://instagram.com/coffeetownleblon" target="_blank">@coffeetownleblon</a></li>
+          <li><strong>💻 Hostinger:</strong> Hospedagem confiável com desconto exclusivo — <a href="https://hostinger.com.br?REFERRALCODE=WOSOSWALD1JK" target="_blank">Acesse aqui</a></li>
+          <li><strong>🛒 Amazon:</strong> Associado afiliado — comissões por compras qualificadas</li>
+          <li><strong>🛍️ Mercado Livre:</strong> Afiliado — recomendações com curadoria</li>
+          <li><strong>📦 Loja Simplex:</strong> Produtos selecionados com presença — <a href="https://biolink.info/MundoOmax" target="_blank">Acesse o catálogo</a></li>
+          <li><strong>📜 Dizeres legais:</strong>
+            <ul>
+              <li>Este site participa de programas de afiliados (Amazon, Mercado Livre)</li>
+              <li>Podemos receber comissões por compras qualificadas feitas através de nossos links</li>
+              <li>Este site não coleta dados pessoais diretamente</li>
+              <li>Para interações via WhatsApp, Telegram ou redes sociais, consulte as políticas das respectivas plataformas</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <section id="loja" class="section section-alt">
     <div class="container">
       <h2>Loja Simplex</h2>
-      <p>Produtos selecionados com critério: design, performance e confiabilidade. Em breve, catálogo completo.</p>
-      <div class="cards">
-        <article class="card">
-          <h3>Produto destaque</h3>
-          <p>Descrição breve e direta. Link para WhatsApp ou página do produto.</p>
-          <a class="btn btn-secondary" href="https://wa.me/55DDDNÚMERO?text=Quero%20o%20Produto%20Destaque" target="_blank" rel="noopener">Quero saber mais</a>
-        </article>
-        <article class="card">
-          <h3>Assinatura VIP</h3>
-          <p>Acesso antecipado a recomendações e ofertas exclusivas.</p>
-          <a class="btn btn-secondary" href="#contato">Entrar na lista</a>
-        </article>
+      <p>Seleção direta de ofertas, curadoria e presença.</p>
+      <div class="embed-box">
+        <!-- Hub de Links da Loja via Canva -->
+        <!-- <iframe src="LINK_DO_CANVA" allowfullscreen loading="lazy"></iframe> -->
       </div>
     </div>
   </section>
 
-  <section id="contato" class="section">
+  <section id="analises" class="section">
     <div class="container">
-      <h2>Contato</h2>
-      <ul class="list">
-        <li><strong>YouTube:</strong> <a href="https://www.youtube.com/@SeuCanal" target="_blank" rel="noopener">@SeuCanal</a></li>
-        <li><strong>WhatsApp:</strong> <a href="https://wa.me/55DDDNÚMERO" target="_blank" rel="noopener">Iniciar conversa</a></li>
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/SeuInsta" target="_blank" rel="noopener">@SeuInsta</a></li>
-      </ul>
+      <h2>Análises Técnicas Avançadas</h2>
+      <p>Estudos aprofundados sobre desempenho, confiabilidade e inovação — sem fanfarronice, com método.</p>
+      <div class="embed-box">
+        <!-- Página de análises via Canva -->
+        <!-- <iframe src="LINK_DO_CANVA" allowfullscreen loading="lazy"></iframe> -->
+      </div>
     </div>
   </section>
- <footer class="footer">
+
+  <footer class="footer">
     <div class="container footer-grid">
-      <small>© MUNDO OMAX — presença, precisão e estilo.</small>
-      <small><a href="#inicio">Voltar ao topo</a></small>
+      <small>© MUNDO OMAX — presença, precisão e estilo. Todos os direitos reservados.</small>
+      <small>Este site participa do Programa de Associados da Amazon. Podemos receber comissões por compras qualificadas feitas através de nossos links.</small>
+      <small>Também somos afiliados do Mercado Livre. Recomendamos produtos com curadoria e podemos receber comissões por compras realizadas via nossos links.</small>
+      <small>Este site não coleta dados pessoais diretamente. Para interações via WhatsApp, Telegram ou redes sociais, consulte as políticas de privacidade das respectivas plataformas.</small>
     </div>
   </footer>
+
 </body>
 </html>
-
