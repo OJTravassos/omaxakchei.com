@@ -29,6 +29,7 @@ body {
   padding: 24px;
 }
 
+/* Topbar e navegação */
 .topbar {
   position: sticky;
   top: 0;
@@ -53,7 +54,7 @@ body {
 }
 
 .logo {
-  height: 46.8px; /* Aumento de 30% sobre os 36px originais */
+  height: 46.8px; /* Aumento de 30% */
   width: auto;
 }
 
@@ -67,6 +68,7 @@ body {
   text-decoration: none;
   margin-left: 18px;
   opacity: .9;
+  transition: color 0.3s ease;
 }
 
 .nav a:hover {
@@ -74,6 +76,7 @@ body {
   color: var(--primary);
 }
 
+/* Hero */
 .hero {
   padding: 64px 0;
   background: linear-gradient(180deg, rgba(255,183,3,0.08), transparent 55%);
@@ -103,12 +106,13 @@ body {
   flex-wrap: wrap;
 }
 
+/* Botões */
 .btn {
   padding: 12px 20px;
   border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .btn-primary {
@@ -130,6 +134,14 @@ body {
   color: #000;
 }
 
+/* Botões com ícones */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Seções */
 .section {
   padding: 56px 0;
   background: var(--surface);
@@ -149,6 +161,7 @@ body {
   margin: 0 0 16px;
 }
 
+/* Embeds */
 .embed-box {
   margin-top: 24px;
   border: 1px solid var(--border);
@@ -162,6 +175,7 @@ body {
   border: none;
 }
 
+/* Recomendacoes */
 .toggle-recomendacoes {
   background: var(--primary);
   color: #000;
@@ -195,6 +209,7 @@ body {
   text-decoration: underline;
 }
 
+/* Rodapé */
 .footer {
   background: var(--surface-alt);
   padding: 32px 24px;
@@ -211,6 +226,27 @@ body {
   font-size: 14px;
 }
 
+/* Artigos técnicos */
+.artigo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 0;
+  line-height: 1.8;
+}
+
+.artigo h2, .artigo h3 {
+  margin-top: 24px;
+}
+
+.artigo blockquote {
+  background: #f9f9f9;
+  border-left: 4px solid var(--primary);
+  padding: 12px 18px;
+  font-style: italic;
+  margin: 24px 0;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
   .hero-grid {
     grid-template-columns: 1fr;
