@@ -1,86 +1,106 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MUNDO OMAX — presença, precisão e estilo</title>
-  <meta name="description" content="Curadoria de tecnologia com presença. Análises técnicas avançadas, recomendações e atitude." />
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Curadoria de tecnologia com presença. Análises técnicas avançadas, recomendações e atitude.">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-  <!-- Banner superior -->
-  <header class="banner-topo">
-    <div class="banner-conteudo">
-      <img src="logo-omax.png" alt="Logo OMAX" class="logo-grande" />
-      <h1 class="titulo-banner">MUNDO OMAX</h1>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="#">
+        <img src="img/logo.png" alt="Logo OMAX" class="logo">
+        <span class="brand-name">MUNDO OMAX</span>
+      </a>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="https://youtube.com/@MundoOmax" target="_blank">Canal</a>
+        <a href="#loja">Loja</a>
+        <a href="#analises">Análises</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Loja Simplex -->
-  <section id="loja" class="section section-loja">
+  <section id="inicio" class="section">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>MUNDO OMAX — presença, precisão e estilo</h1>
+        <p>Curadoria de tecnologia com atitude. Análises técnicas avançadas e recomendações que você pode confiar.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://wa.me/5521987610546" target="_blank">Falar no WhatsApp</a>
+          <a class="btn btn-outline" href="https://instagram.com/ostra43" target="_blank">@ostra43</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="embed-box">
+          <!-- Banner do Canva -->
+          <!-- <iframe src="LINK_DO_CANVA" allowfullscreen loading="lazy"></iframe> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="recomendacoes" class="section">
+    <div class="container">
+      <button class="toggle-recomendacoes" onclick="document.getElementById('lista-reco').classList.toggle('show')">
+        Omax recomenda:
+      </button>
+      <div id="lista-reco" class="recomendacoes-lista">
+        <ul>
+          <li><strong>☕ CoffeeTown Leblon:</strong> Os mais refinados cafés e iguarias desse Bistrô Café — <a href="https://instagram.com/coffeetownleblon" target="_blank">@coffeetownleblon</a></li>
+          <li><strong>💻 Hostinger:</strong> Hospedagem confiável com desconto exclusivo — <a href="https://hostinger.com.br?REFERRALCODE=WOSOSWALD1JK" target="_blank">Acesse aqui</a></li>
+          <li><strong>🛒 Amazon:</strong> Associado afiliado — comissões por compras qualificadas</li>
+          <li><strong>🛍 Mercado Livre:</strong> Afiliado — recomendações com curadoria</li>
+          <li><strong>📦 Loja Simplex:</strong> Produtos selecionados com presença — <a href="https://biolink.info/MundoOmax" target="_blank">Acesse o catálogo</a></li>
+          <li><strong>📜 Dizeres legais:</strong>
+            <ul>
+              <li>Este site participa de programas de afiliados (Amazon, Mercado Livre)</li>
+              <li>Podemos receber comissões por compras qualificadas feitas através de nossos links</li>
+              <li>Este site não coleta dados pessoais diretamente</li>
+              <li>Para interações via WhatsApp, Telegram ou redes sociais, consulte as políticas das respectivas plataformas</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="loja" class="section section-alt">
     <div class="container">
       <h2>Loja Simplex</h2>
       <p>Seleção direta de ofertas, curadoria e presença.</p>
       <div class="embed-box">
-        <!-- Embed do Canva da Loja -->
+        <!-- Hub de Links da Loja via Canva -->
         <!-- <iframe src="LINK_DO_CANVA" allowfullscreen loading="lazy"></iframe> -->
       </div>
     </div>
   </section>
 
-  <!-- Omax recomenda -->
-  <section id="recomendacoes" class="section">
+  <section id="analises" class="section">
     <div class="container">
-      <button class="toggle-recomendacoes" onclick="document.getElementById('lista-reco').classList.toggle('show')">
-        Omax recomenda
-      </button>
-      <div id="lista-reco" class="recomendacoes-lista">
-        <ul>
-          <li><strong>☕ CoffeeTown Leblon:</strong> Bistrô Café refinado — <a href="https://instagram.com/coffeetownleblon" target="_blank">@coffeetownleblon</a></li>
-          <li><strong>💻 Hostinger:</strong> Hospedagem com desconto — <a href="https://hostinger.com.br?REFERRALCODE=WOSOSWALD1JK" target="_blank">Acesse aqui</a></li>
-          <li><strong>🛒 Amazon:</strong> Associado afiliado — comissões por compras qualificadas</li>
-          <li><strong>🛍️ Mercado Livre:</strong> Afiliado — recomendações com curadoria</li>
-          <li><strong>📦 Loja Simplex:</strong> Produtos selecionados — <a href="https://biolink.info/MundoOmax" target="_blank">Catálogo</a></li>
-        </ul>
-        <p class="aviso-reco">Este site está em permanente desenvolvimento. Volte sempre para ver novidades interessantes!</p>
+      <h2>Análises Técnicas Avançadas</h2>
+      <p>Estudos aprofundados sobre desempenho, confiabilidade e inovação — sem fanfarronice, com método.</p>
+      <div class="embed-box">
+        <!-- Página de análises via Canva -->
+        <!-- <iframe src="LINK_DO_CANVA" allowfullscreen loading="lazy"></iframe> -->
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato" class="section section-alt">
-    <div class="container">
-      <h2>Meus links</h2>
-      <ul class="contato-lista">
-        <li><strong>Facebook:</strong> Oswaldo Travassos</li>
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/ostra43" target="_blank">@ostra43</a></li>
-        <li><strong>X:</strong> <a href="https://x.com/Ostra2043" target="_blank">@Ostra2043</a></li>
-        <li><strong>WhatsApp Business:</strong> <a href="https://wa.me/5521987610546" target="_blank">Falar com OMAX</a></li>
-        <li><strong>Telegram:</strong> @gentleman43</li>
-        <li><strong>TikTok:</strong> @Ostra759</li>
-        <li><strong>Biolink:</strong> <a href="https://biolink.info/MundoOmax" target="_blank">biolink.info/MundoOmax</a></li>
-        <li><strong>Email:</strong> <a href="mailto:omaxakchei@gmail.com">omaxakchei@gmail.com</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Canal -->
-  <section id="canal" class="section">
-    <div class="container canal-bloco">
-      <p class="canal-frase">Conheça o canal do OMAX: um mundo de tecnologia e sofisticação</p>
-      <a class="btn btn-canal" href="LINK_DO_CANAL" target="_blank">Visite o Canal</a>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
   <footer class="footer">
     <div class="container footer-grid">
-      <small>Este site participa de programas de afiliados (Amazon, Mercado Livre). Podemos receber comissões por compras qualificadas feitas através de nossos links. Este site não coleta dados pessoais diretamente. Para interações via WhatsApp, Telegram ou redes sociais, consulte as políticas das respectivas plataformas.</small>
-      <small>Omax Akchei e Ostramax são criações de Oswaldo Travassos</small>
+      <small>© MUNDO OMAX — presença, precisão e estilo. Todos os direitos reservados.</small>
+      <small>Este site participa do Programa de Associados da Amazon. Podemos receber comissões por compras qualificadas feitas através de nossos links.</small>
+      <small>Também somos afiliados do Mercado Livre. Recomendamos produtos com curadoria e podemos receber comissões por compras realizadas via nossos links.</small>
+      <small>Este site não coleta dados pessoais diretamente. Para interações via WhatsApp, Telegram ou redes sociais, consulte as políticas de privacidade das respectivas plataformas.</small>
     </div>
   </footer>
 
 </body>
 </html>
+  
