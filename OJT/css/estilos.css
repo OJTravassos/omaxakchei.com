@@ -267,4 +267,6 @@ small,.muted { color: var(--muted); }
   .cards-3 { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 640px) {
-  .cards
+  .cards-3 { grid-template-columns: 1fr; }
+  .menu { display: none; }
+  .nav-toggle {
