@@ -6,6 +6,7 @@
 
   <title>OMAX GOLD — presença, precisão e estilo</title>
   <meta name="description" content="OMAX GOLD: curadoria de tecnologia com presença. Loja Simplex ao vivo, padrão visual G‑5, performance e precisão.">
+  <link rel="canonical" href="https://www.omaxakchei.com/">
 
   <!-- Favicon inline -->
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect rx="12" width="64" height="64" fill="%230F4C81"/><text x="50%" y="55%" text-anchor="middle" font-size="34" font-family="Arial" fill="white">O</text></svg>'>
@@ -24,6 +25,14 @@
   <!-- CSS e Manifest -->
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="stylesheet" href="./css/estilos.css">
+
+  <!-- Fallback de acessibilidade para quem estiver sem JS no mobile -->
+  <noscript>
+    <style>
+      .menu { display: flex !important; }
+      .nav-toggle { display: none !important; }
+    </style>
+  </noscript>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -37,14 +46,16 @@
         </svg>
         <span>OMAX GOLD</span>
       </a>
+
       <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
+
       <nav id="menu" class="menu" aria-label="Principal">
         <a href="#inicio">Início</a>
         <a href="#loja-simplex">Loja</a>
         <a href="#contato">Contato</a>
-        <a class="btn btn-accent" target="_blank" rel="noopener" href="https://www.youtube.com/@omax">Canal OMAX</a>
+        <a class="btn btn-accent" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@omax">Canal OMAX</a>
       </nav>
     </div>
   </header>
@@ -58,7 +69,7 @@
           <p>Curadoria de tecnologia com atitude. Recomendamos o que usamos e explicamos o porquê. Visual sólido, performance estável e publicação contínua.</p>
           <div class="hero-cta">
             <a class="btn btn-primary" href="#loja-simplex">Explorar Loja Simplex</a>
-            <a class="btn btn-outline" href="https://wa.me/5521987610546?text=Quero%20falar%20com%20a%20OMAX" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-outline" href="https://wa.me/5521987610546?text=Quero%20falar%20com%20a%20OMAX" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
           </div>
           <ul class="trust">
             <li><span class="dot"></span>Layout responsivo</li>
@@ -77,42 +88,136 @@
       <div class="container">
         <h2>Loja Simplex</h2>
         <p class="muted">Produtos selecionados com links afiliados — clique para saber mais e garantir o seu.</p>
+
         <div class="cards-3">
           <!-- Produto 1 -->
           <article class="card produto">
-            <a href="https://amzn.to/4p3VPmr" target="_blank" rel="noopener">
-              <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX466_.jpg" alt="Apple AirPods Pro 2 (USB‑C) — Branco" loading="lazy">
+            <a href="https://amzn.to/4p3VPmr" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SX466_.jpg" alt="Apple AirPods Pro 2 (USB‑C) — Branco" loading="lazy" width="466" height="466">
             </a>
             <h3>Apple AirPods Pro (2ª geração)</h3>
             <p class="muted">Estojo MagSafe USB‑C — Branco</p>
             <ul class="bullets">
               <li>Marca: Apple</li>
               <li>Intra‑auricular</li>
-              <li>Impedância: 16 Ω</li>
+              <li>Cancelamento ativo de ruído</li>
             </ul>
-            <a class="btn btn-primary" href="https://amzn.to/4p3VPmr" target="_blank" rel="noopener">Ver na Loja</a>
+            <a class="btn btn-primary" href="https://amzn.to/4p3VPmr" target="_blank" rel="noopener noreferrer">Ver na Loja</a>
           </article>
 
           <!-- Produto 2 -->
           <article class="card produto">
-            <a href="https://amzn.to/45HwGGI" target="_blank" rel="noopener">
-              <img src="https://m.media-amazon.com/images/I/7169HQ6wzUL._AC_SX466_.jpg" alt="Kindle Paperwhite Signature 32 GB (7&quot;)" loading="lazy">
+            <a href="https://amzn.to/45HwGGI" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/7169HQ6wzUL._AC_SX466_.jpg" alt="Kindle Paperwhite Signature 32 GB (7&quot;)" loading="lazy" width="466" height="466">
             </a>
             <h3>Kindle Paperwhite Signature 32 GB</h3>
             <p class="muted">Tela 7", luz autoadaptável, carregamento sem fio</p>
             <ul class="bullets">
               <li>Troca de página 25% mais rápida</li>
-              <li>Bateria até 12 semanas</li>
+              <li>Bateria para semanas de leitura</li>
             </ul>
-            <a class="btn btn-primary" href="https://amzn.to/45HwGGI" target="_blank" rel="noopener">Ver na Loja</a>
+            <a class="btn btn-primary" href="https://amzn.to/45HwGGI" target="_blank" rel="noopener noreferrer">Ver na Loja</a>
           </article>
 
           <!-- Produto 3 -->
           <article class="card produto">
-            <a href="https://amzn.to/4mSi0ur" target="_blank" rel="noopener">
-              <img src="https://m.media-amazon.com/images/I/61CKrZWOcrL._AC_SX450_.jpg" alt="SSD Externo Samsung T7 Shield 1 TB" loading="lazy">
+            <a href="https://amzn.to/4mSi0ur" target="_blank" rel="noopener noreferrer">
+              <img src="https://m.media-amazon.com/images/I/61CKrZWOcrL._AC_SX450_.jpg" alt="SSD Externo Samsung T7 Shield 1 TB" loading="lazy" width="450" height="450">
             </a>
             <h3>SSD Externo Samsung T7 Shield 1 TB</h3>
             <p class="muted">USB 3.2 Gen2, até 1050 MB/s, IP65</p>
             <ul class="bullets">
-              <li>
+              <li>Resistente a quedas e poeira (IP65)</li>
+              <li>Compacto, leve e rápido (até 1050 MB/s)</li>
+            </ul>
+            <a class="btn btn-primary" href="https://amzn.to/4mSi0ur" target="_blank" rel="noopener noreferrer">Ver na Loja</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section alt">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Fale com a OMAX</h2>
+          <p>Quer consultoria rápida, indicação assertiva ou suporte de compra? Chama que respondemos.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:contato@omaxakchei.com">contato@omaxakchei.com</a>
+            <a class="btn btn-outline" href="https://wa.me/5521987610546?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20OMAX" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Publicações e canal</h2>
+          <p>Vídeos, recomendações e drops semanais com foco em valor real — sem firula.</p>
+          <div class="actions">
+            <a class="btn btn-accent" href="https://www.youtube.com/@omax" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a class="btn btn-outline" href="#loja-simplex">Ver Loja</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="brand-mini">
+        <svg width="20" height="20" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="12" fill="#0F4C81"></rect>
+          <text x="50%" y="55%" text-anchor="middle" font-size="34" font-family="Arial" fill="#fff">O</text>
+        </svg>
+        <small>OMAX GOLD</small>
+      </div>
+      <small class="muted">© 2025 OMAX GOLD. Todos os direitos reservados.</small>
+      <nav class="foot-nav" aria-label="Rodapé">
+        <a href="#inicio">Início</a>
+        <a href="#loja-simplex">Loja</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script mínimo para o menu mobile -->
+  <script>
+    (function () {
+      const headerNav = document.querySelector('.nav');
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.getElementById('menu');
+      if (!toggle || !headerNav || !menu) return;
+
+      function closeMenu() {
+        headerNav.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.setAttribute('aria-label', 'Abrir menu');
+      }
+
+      toggle.addEventListener('click', () => {
+        const isOpen = headerNav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        toggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+      });
+
+      // Fecha ao clicar em links do menu
+      menu.addEventListener('click', (e) => {
+        const el = e.target;
+        if (el.tagName === 'A') closeMenu();
+      });
+
+      // Fecha com ESC
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+
+      // Reseta no resize para desktop
+      let lastW = window.innerWidth;
+      window.addEventListener('resize', () => {
+        const w = window.innerWidth;
+        if (w > 640 && lastW <= 640) closeMenu();
+        lastW = w;
+      });
+    })();
+  </script>
+</body>
+</html>
+```
