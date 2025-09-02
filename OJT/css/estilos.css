@@ -29,6 +29,12 @@ body {
 img { max-width: 100%; display: block; border-radius: var(--radius); }
 a { color: var(--blue-accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--blue-accent);
+  outline-offset: 2px;
+}
 h1,h2,h3 { line-height: 1.2; margin-bottom: 12px; }
 h1 { font-size: clamp(2.2rem, 2.5vw + 1rem, 3.2rem); }
 h2 { font-size: clamp(1.6rem, 1.2vw + 0.8rem, 2.2rem); }
@@ -63,6 +69,7 @@ small,.muted { color: var(--muted); }
   align-items: center;
   justify-content: space-between;
   padding: 12px 0;
+  position: relative;
 }
 .brand {
   display: flex;
@@ -94,6 +101,7 @@ small,.muted { color: var(--muted); }
   border: 1px solid transparent;
   font-weight: 600;
   transition: .2s transform ease, .2s background ease, .2s border-color ease;
+  cursor: pointer;
 }
 .btn:hover { transform: translateY(-1px); }
 .btn-primary {
@@ -126,6 +134,9 @@ small,.muted { color: var(--muted); }
   gap: 24px;
   align-items: center;
   background: linear-gradient(145deg, #0D1527 0%, #0F172A 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  padding: 24px;
 }
 .hero-copy .highlight { color: var(--blue-accent); }
 .hero-cta {
@@ -154,9 +165,10 @@ small,.muted { color: var(--muted); }
   width: 100%;
   aspect-ratio: 4/3;
   border-radius: var(--radius-lg);
-  background: radial-gradient(120% 120% at 0% 100%, rgba(30,136,229,.25), transparent 40%),
-              radial-gradient(120% 120% at 100% 0%, rgba(15,76,129,.35), transparent 40%),
-              #0C1324;
+  background:
+    radial-gradient(120% 120% at 0% 100%, rgba(30,136,229,.25), transparent 40%),
+    radial-gradient(120% 120% at 100% 0%, rgba(15,76,129,.35), transparent 40%),
+    #0C1324;
   border: 1px solid var(--line);
 }
 
@@ -250,6 +262,7 @@ small,.muted { color: var(--muted); }
   border-radius: 10px;
   padding: 8px;
   cursor: pointer;
+  color: var(--txt);
 }
 .nav-toggle .bar {
   display: block;
@@ -266,7 +279,34 @@ small,.muted { color: var(--muted); }
   .grid-2 { grid-template-columns: 1fr; }
   .cards-3 { grid-template-columns: 1fr 1fr; }
 }
+
 @media (max-width: 640px) {
   .cards-3 { grid-template-columns: 1fr; }
   .menu { display: none; }
-  .nav-toggle {
+  .nav-toggle { display: block; }
+  .hero { padding: 32px 0 16px; }
+  .hero-cta { flex-direction: column; align-items: stretch; }
+  .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 8px; }
+
+  /* Menu móvel quando a navegação estiver "aberta" (adicione .is-open na .nav) */
+  .nav.is-open .menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin-top: 10px;
+    flex-direction: column;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px;
+    gap: 8px;
+    box-shadow: var(--shadow);
+    z-index: 1100;
+  }
+  .nav.is-open .menu a {
+    padding: 10px 12px;
+    border-radius: 8px;
+  }
+}
