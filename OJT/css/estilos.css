@@ -145,6 +145,12 @@ small,.muted { color: var(--muted); }
   margin: 16px 0 8px;
   flex-wrap: wrap;
 }
+.hero-copy .hero-logo {
+  display: block;
+  width: 220px;        /* ajuste para ficar grande e marcante */
+  margin: 0 auto 24px; /* centraliza e afasta do texto abaixo */
+}
+
 .trust {
   display: flex;
   gap: 18px;
